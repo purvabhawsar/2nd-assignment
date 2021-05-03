@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webpage</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  
+
+
+ 
+
+ 
+  
+
+</head>
+<body>
+<div class="container"></div>
+<div class="head">
+	<h6 class="sur">Surprisely</h6>
+	<h5 class="menu"><ul>
+  <li ><a href="#" class="btn btn-primary btn-sm" role="button">Login</a></li>
+  <li><a href="#"  class="btn btn-light btn-sm text-primary" role="button"> cart(0)</a></li>
+  <li><a href="#"  class="btn btn-light btn-sm text-primary" role="button">FAQ</a></li>
+  <li><a href="#"  class="btn btn-light btn-sm text-primary" role="button">About Us</a></li>
+  <li><a href="#"  class="btn btn-light btn-sm text-primary" role="button">What's Inside</a></li>
+  <li ><a href="#"  class="btn btn-light btn-sm text-primary active" role="button"> Subscribe</a></li>
+</ul></h5>
+
+</div>
+<div class="sl1">
+
+  <img class="mySlides" src="images/6.jpg">
+  <div class="carousel-caption">
+                <h3 class="slidetext"><kbd>Cute | curated | Consious</kbd></h3>
+                <h3 class="slidetext">cool Dressess. Thousands Of variety cool Dressess. Thousands Of variety</h3>
+                </div>                
+          
+  <img class="mySlides" src="images/7.jpg">
+               
+  
+  <img class="mySlides" src="images/9.jpg ">
+              
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); 
+}
+</script>
+<div class="content">
+	<h3 class="ctext p-5">A monthly Surprise deleivered at your doorstep <br> 3Outfit ideal for your baby's playtime,day out and snooze.</h3>
+	<div class="row">
+	<div class="col m-3"><img src="images/5.jpg" height="250px" width="400px"></div>
+	<div class="col m-3"><img src="images/2.jpg" height="250px" width="400px"></div>
+	<div class="col m-3"><img src="images/3.jpg" height="250px" width="400px"></div></div>
+	<center><button class="btn btn-primary m-5">Learn More</button></center>
+</div>
+<div class="slide2">
+<h5 class="why p-5">Why Surprisely?</h5>
+
+	
+  <img class="slido" src="images/8.jpg">
+
+                 
+  
+  <img class="slido" src="images/2.jpg">
+  
+  
+
+  <center><button class="button  display-left m-3 btn-primary " onclick="plusDivs(-1)">&#10094;</button>
+  <button class="button display-right m-3 btn-primary" onclick="plusDivs(1)">&#10095;</button></center>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slido");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div class="context">
+	<div class="row row-center">
+	<div class="col m-5 "><img src=" images/logo3.png" height="250px" width="300px"><h6 class="text-center  text-bold">this dress like is beautiful  <br>wear.this dress is beautiful you like you li</h6></div>
+	<div class="col m-5 "><img src=" images/logo3.png" height="250px" width="300px"><h6 class="text-center  text-bold">this dress like is beautiful  <br>wear.this dress is beautiful you like you li</h6></div>
+	<div class="col m-5"><img src=" images/logo3.png" height="250px" width="300px"><h6 class="text-center  text-bold">this dress like is beautiful  <br>wear.this dress is beautiful you like you li</h6></div></div>
+	
+
+		
+	</div>
+</div>
+<div class="footer">
+	<div class="footdiv"><h1 class="lh ">Our Story</h1>
+	<h5 class="lc">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+
+
+</h5>
+<center><button class="button btn-inline-light m-3 ">About Us</button></center></div>
+<div class="ff"><ol><li>Contact Us</li>
+<li>sss@gmail.com</li>
+<li>Terms | Condtions</li></ol></div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
